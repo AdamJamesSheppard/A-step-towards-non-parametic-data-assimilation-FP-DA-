@@ -1,0 +1,33 @@
+{
+    "domain": {
+        "lower_bounds": [-3.345, -3.2, -1.0],
+        "upper_bounds": [3.345, 3.2, 1.0],
+        "resolution": [50, 50, 50]
+    },
+    "lorenz": {
+        "sigma": 3.765432,
+        "rho": 17.654323456,
+        "beta": 2.666666
+    },
+    "diffusion": {
+        "mean": 1,
+        "std": 2,
+        "range": [1, 2]
+    },
+    "intensity": 10,
+    "control_matrix": [
+        [1.0, 0.2, 0.1],
+        [0.1, 1.0, 0.3],
+        [0.2, 0.5, 1.0]
+    ],
+    "simulation": {
+        "total_time": 50,
+        "time_step": 0.001
+    },
+    "theta": 1.0,
+    "output": {
+        "plot_dir": "fenics_run_plots/tests/test13",
+        "save_interval": 10
+    },
+    "initial_distribution_path": "/path/to/lorenz_hist.csv"
+}
